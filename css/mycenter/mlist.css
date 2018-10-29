@@ -1,0 +1,112 @@
+@charset "utf-8";
+#mlist {
+	position: relative;
+	width: 220px;
+	height: 360px;
+	/*background-color: #b7ccfa;*/
+}
+
+
+/*歌曲名和歌手名容器*/
+
+#name {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	/*background-color: #b7ccfa;*/
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+/*列表容器*/
+
+#showlist {
+	position: relative;
+	width: 220px;
+	height: 320px;
+	/*background-color: #b7ccfa;*/
+}
+
+
+/*数据条目类*/
+
+.list-item {
+	position: relative;
+	width: 100%;
+	height: 35px;
+	color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	align-items: center;
+}
+
+.list-item:hover {
+	cursor: pointer;
+	background-color: #7bc6fc !important;
+}
+
+
+/*歌名*/
+
+.music-name {
+	position: relative;
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	margin: auto auto auto 17px;
+	font-size: 14px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	/*禁止双击选定*/
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+/*歌手名*/
+
+.auth-name {
+	position: relative;
+	width: 60px;
+	height: 35px;
+	line-height: 35px;
+	margin: auto auto auto 20px;
+	font-size: 14px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	/*禁止双击选定*/
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+/*列表底部的bar*/
+
+.bar {
+	position: relative;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	font-size: 14px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	/*禁止双击选定*/
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.bar:hover {
+	cursor: pointer;
+	background-color: #7bc6fc;
+}

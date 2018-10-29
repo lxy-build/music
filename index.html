@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Music</title>
+
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/mycenter/button.css">
+		<link rel="stylesheet" type="text/css" href="css/mycenter/mlist.css">
+		<link rel="stylesheet" type="text/css" href="css/mycenter/lyric.css">
+		<link rel="stylesheet" type="text/css" href="css/mybottom/bottom.css">
+		<link rel="stylesheet" type="text/css" href="css/mybottom/processbar.css">
+		<link rel="stylesheet" type="text/css" href="css/mybottom/volume.css">
+		<script src="js/res/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="mybg">
+			<div id="whole">
+				<audio id="myaudio" src="" hidden></audio>
+
+				<div id="header">
+					<img id="logo" src="img/header/logo2.png" />
+				</div>
+
+				<div id="mycenter">
+
+					<div id="button" class="mycenter">
+						<div id="search">
+							<form onSubmit="return MySearch()">
+								<input type="text" id="sebox" placeholder="搜索">
+							</form>
+						</div>
+						<div id="btn0" class="btn" data-action="0">搜索列表
+
+						</div>
+						<div id="btn1" class="btn" data-action="1">历史列表
+
+						</div>
+						<div id="btn2" class="btn" data-action="2">古典音乐榜
+
+						</div>
+						<div id="btn3" class="btn" data-action="3">电竞音乐榜
+
+						</div>
+						<div id="btn4" class="btn" data-action="4">原创歌曲榜
+
+						</div>
+						<div id="btn5" class="btn" data-action="5">云音乐飙升榜
+
+						</div>
+						<div id="btn6" class="btn" data-action="6">云音乐新歌榜
+
+						</div>
+						<div id="btn7" class="btn" data-action="7">云音乐热歌榜
+
+						</div>
+					</div>
+
+					<div id="mlist" class="mycenter">
+						<div id="name">
+							<span id="thena" class="music-name">歌曲</span>
+							<span id="thes" class="auth-name">歌手</span>
+						</div>
+						<div id="showlist" class='showlist'>
+
+						</div>
+					</div>
+					<div id="lyric" class="mycenter">
+						<img id='lyricpic' src="img/logo/musiclogo2.png" width="360px" height="360px" />
+						<div id='lyricbox'></div>
+					</div>
+				</div>
+
+				<div id="bottom">
+					<div id="album">
+						<img id="pic1" class="pic" src="img/logo/musiclogo.png" />
+					</div>
+
+					<div id="control">
+						<img id="pre" class="ctl" src="img/bottom/pre.png" width="25px" height="25px" />
+						<div id="playpau" class="ctl">
+							<img id="play" class="pypu" src="img/bottom/play.png" />
+							<img id="pau" class="pypu" src="img/bottom/pau.png" hidden />
+						</div>
+						<img id="nxt" class="ctl" src="img/bottom/nxt.png" width="25px" height="25px" />
+					</div>
+
+					<div id="probox">
+						<div id="bartxt">
+							<div id="muname">无歌曲</div>
+							<div id="mutime">
+								<div id="ctime">00:00</div>
+								<div id="altime">/ 00:00</div>
+							</div>
+						</div>
+						<div id="barbox">
+							<div id="lastbar"></div>
+							<div id="midbar"></div>
+						</div>
+					</div>
+
+					<div id="vobox">
+						<div id="iconbox">
+							<img id="loud" src="img/bottom/volume2.png" width="18px" height="18px" />
+							<img id="quiet" src="img/bottom/quiet.png" width="18px" height="18px" hidden />
+						</div>
+						<div id="volumebox">
+							<div id="vbar1"></div>
+							<div id="vbar2"></div>
+						</div>
+						<div id="download">
+							<img id='down' src="img/bottom/download.png" width="19px" height="19px" />
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<script src="js/res/layer/layer.js"></script>
+			<script src="js/res/jquery.color.min.js"></script>
+			<script src="js/res/jquery.nicescroll.min.js"></script>
+			<script src="js/res/jquery.nicescroll.iframehelper.min.js"></script>
+			<script src="js/res/jquery.pause.js"></script>
+
+			<script src="js/mycenter/center.js"></script>
+			<script src="js/mycenter/cen-btn.js"></script>
+			<script src="js/mycenter/cen-list.js"></script>
+			<script src="js/mycenter/cen-lyric.js"></script>
+
+			<script src="js/mybottom/bottom.js"></script>
+			<script src="js/mybottom/processbox.js"></script>
+			<script src="js/mybottom/controlbox.js"></script>
+			<script src="js/mybottom/volumebox.js"></script>
+
+			<script src="js/ajax.js"></script>
+			<script src="js/main.js"></script>
+			<script src="js/myplayer.js"></script>
+	</body>
+
+</html>

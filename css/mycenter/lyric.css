@@ -1,0 +1,66 @@
+@charset "utf-8";
+#lyric {
+	position: relative;
+	width: 360px;
+	height: 360px;
+	/*background-color: #b7ccfa;*/
+	border-left: 1px solid rgba(0, 0, 0, 0.1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+/*歌词背景*/
+
+#lyricpic {
+	position: absolute;
+	z-index: 0;
+}
+
+
+/*歌词容器*/
+
+#lyricbox {
+	position: absolute;
+	width: 360px;
+	height: 360px;
+	overflow: hidden;
+}
+
+
+/*歌词*/
+
+.linelyric {
+	position: relative;
+	height: 35px;
+	font-size: 15px;
+	line-height: 35px;
+	text-align: center;
+	width: 100%;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	/*禁止双击选定*/
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	color: rgba(255, 555, 255, 1);
+}
+
+
+/*去掉歌词列表的点*/
+
+.linelyric li {
+	list-style: none;
+}
+
+
+/*歌词背景模糊*/
+
+.blur {
+	filter: blur(6px);
+	-webkit-filter: blur(6px);
+	/* chrome, opera */
+	-ms-filter: blur(6px);
+	-moz-filter: blur(6px);
+}

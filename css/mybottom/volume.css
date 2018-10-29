@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/*音量条容器*/
+
+#vobox {
+	position: relative;
+	width: 145px;
+	height: 70px;
+	margin: auto 0 auto auto;
+	display: flex;
+	align-items: center;
+}
+
+
+/*音量图标容器*/
+
+#iconbox {
+	position: relative;
+	width: 18px;
+	height: 18px;
+}
+
+
+/*音量图标*/
+
+#loud {
+	position: absolute;
+}
+
+#loud:hover {
+	cursor: pointer;
+}
+
+
+/*静音图标*/
+
+#quiet {
+	position: absolute;
+}
+
+#quiet:hover {
+	cursor: pointer;
+}
+
+
+/*音量进度条容器*/
+
+#volumebox {
+	position: relative;
+	width: 80px;
+	height: 10px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+}
+
+#volumebox:hover {
+	cursor: pointer;
+}
+
+
+/*下层进度条*/
+
+#vbar1 {
+	position: absolute;
+	width: 80px;
+	height: 5px;
+	border-radius: 2px;
+	background-color: #acdbfd;
+}
+
+
+/*上层音量条*/
+
+#vbar2 {
+	position: absolute;
+	width: 0px;
+	height: 5px;
+	border-radius: 2px;
+	background-color: #40AFFE;
+}
+
+
+/*下载容器*/
+
+#download {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	margin: auto;
+}
+
+#down {
+	position: absolute;
+}
+
+#down:hover {
+	cursor: pointer;
+}

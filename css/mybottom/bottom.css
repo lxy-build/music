@@ -1,0 +1,75 @@
+@charset "utf-8";
+#bottom {
+	position: relative;
+	width: 100%;
+	height: 70px;
+	/*background-color: #B7CCFA;*/
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: center;
+}
+
+
+/*专辑封面*/
+
+#album {
+	position: relative;
+	width: 80px;
+	height: 70px;
+	/*background-color: #000000;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+}
+
+
+/*pic*/
+
+.pic {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+}
+
+
+/*控制类按钮的div*/
+
+#control {
+	position: relative;
+	width: 120px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	margin: auto 0 auto 0;
+}
+
+
+/*控制按钮类*/
+
+.ctl {
+	position: relative;
+	margin: auto;
+}
+.ctl:hover{
+	cursor: pointer;
+}
+
+
+/*“暂停”和“播放”按钮的div*/
+
+#playpau {
+	width: 30px;
+	height: 30px;
+}
+
+
+/*“暂停”和“播放”按钮的类*/
+
+.pypu {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+}
+
+

@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+/*进度条和“歌曲名”“时间”的div*/
+
+#probox {
+	position: relative;
+	width: 320px;
+	height: 70px;
+	margin: auto auto auto 15px;
+}
+
+
+/*显示文字的div父容器*/
+
+#bartxt {
+	position: relative;
+	width: 100%;
+	height: 25px;
+	display: flex;
+	margin: 1px 0 0 0;
+}
+
+
+/*显示歌曲名字的div*/
+
+#muname {
+	position: relative;
+	width: 150px;
+	height: 25px;
+	font-size: 12px;
+	line-height: 25px;
+	overflow: hidden;
+}
+
+
+/*歌曲时间容器*/
+
+#mutime {
+	position: relative;
+	width: 170px;
+	height: 25px;
+	display: flex;
+}
+
+
+/*记录歌曲当前播放时间的容器*/
+
+#ctime {
+	position: relative;
+	width: 42px;
+	height: 25px;
+	text-align: center;
+	margin: auto 0 auto auto;
+	line-height: 25px;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+
+/*显示歌曲总时间*/
+
+#altime {
+	position: relative;
+	width: 45px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	margin: auto 0 auto 0;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+
+/*进度条容器*/
+
+#barbox {
+	position: relative;
+	top: 4px;
+	width: 320px;
+	height: 15px;
+	margin: auto;
+	display: flex;
+	/*上下居中，我居然忘记了*/
+	align-items: center;
+}
+
+#barbox:hover {
+	cursor: pointer;
+}
+
+
+/*底层的进度条*/
+
+#lastbar {
+	position: absolute;
+	width: 320px;
+	height: 6px;
+	border-radius: 2px;
+	background-color: #acdbfd;
+}
+
+
+/*上层的可伸缩进度条*/
+
+#midbar {
+	position: absolute;
+	width: 0px;
+	height: 6px;
+	border-radius: 2px;
+	background-color: #40AFFE;
+}

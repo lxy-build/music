@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/*中部容器*/
+
+#mycenter {
+	position: relative;
+	width: 700px;
+	height: auto;
+	/*background-color: #a4bcf8;*/
+	display: flex;
+	align-items: center;
+}
+
+
+/*按钮容器*/
+
+#button {
+	position: relative;
+	/*background-color: #b7ccfa;*/
+	border-right:1px solid rgba(0,0,0,0.1);
+	/*95aff3 #c4d9f6 #c4d3f9*/
+	width: 120px;
+	height: 360px;
+}
+/*搜索容器*/
+#search{
+	position: relative;
+	width:120px;
+	height:40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*搜索框*/
+#sebox{
+	position: relative;
+	width:96px;
+	height:28px;
+	padding:0 0 0 8px;
+	border: 0;
+	border-radius: 3px;
+}
+/*中部按钮类*/
+.btn {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	background-color: #e9f5fe;
+	line-height: 40px;
+	text-indent: 1em;
+	/*color:rgba(0,0,0,0.8);*/
+	
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	/*禁止双击选定*/
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.btn:hover {
+	cursor: pointer;
+	background-color: #7bc6fc !important; 
+}
+
+
+
+
+
